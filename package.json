@@ -1,0 +1,27 @@
+{
+  "name": "rubiksolver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "test": "test",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phuongdoan13/rubikSolver.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Harry Doan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phuongdoan13/rubikSolver/issues"
+  },
+  "homepage": "https://github.com/phuongdoan13/rubikSolver#readme",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/node": "^20.8.10"
+  }
+}
