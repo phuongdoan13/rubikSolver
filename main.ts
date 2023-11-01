@@ -1,5 +1,5 @@
-const { app, BrowserWindow } = require('electron');
-const path = require('node:path');
+import { app, BrowserWindow } from 'electron';
+import path = require('node:path');
 
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
@@ -19,9 +19,11 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow();
     }
-  })
-})
+  });
+});
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') app.quit()
-})
+  if (process.platform !== 'darwin') {
+		app.quit();
+	}
+});
