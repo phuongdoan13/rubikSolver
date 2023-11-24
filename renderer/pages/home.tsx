@@ -15,17 +15,17 @@ export default function HomePage() {
   return (
     <React.Fragment>
       <Head>
-        <title>Home - Nextron (basic-lang-typescript)</title>
+        <title>Home</title>
       </Head>
       <div>
         <p>
-          ⚡ Electron + Next.js ⚡ -
-          <Link href="/next">
-            <a>Go to next page</a>
+          <h1> RUBIK SOLVER </h1>
+          <Link href="/cube3x3">
+            <a>Solve Rubik cube</a>
           </Link>
         </p>
         <Image
-          src="/images/logo.png"
+          src="/images/rubik.gif"
           alt="Logo image"
           width="256px"
           height="256px"

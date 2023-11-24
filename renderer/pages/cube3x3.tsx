@@ -6,14 +6,16 @@ export default function NextPage() {
   return (
     <React.Fragment>
       <Head>
-        <title>Next - Nextron (basic-lang-typescript)</title>
+        <title>Solve 3x3 Cube</title>
       </Head>
       <div>
         <p>
-          ⚡ Electron + Next.js ⚡ -
           <Link href="/home">
-            <a>Go to home page</a>
+            <a>Home Page</a>
           </Link>
+        </p>
+        <p>
+          TBD
         </p>
       </div>
     </React.Fragment>

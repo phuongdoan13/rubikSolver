@@ -36,3 +36,6 @@ $ yarn dev (or `npm run dev` or `pnpm run dev`)
 # production build
 $ yarn build (or `npm run build` or `pnpm run build`)
 ```
+
+# Asset
+Rubik main screen https://tenor.com/view/agenturleben-agencylife-hannover-kochstrasse-kstr-gif-20343289
