@@ -2,14 +2,13 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-
+import "tailwindcss/tailwind.css";
 export default function HomePage() {
   const [message, setMessage] = React.useState("No message found");
 
   React.useEffect(() => {
-    window.ipc.on("message", (message: string) => {
-      setMessage(message);
-    });
+    const value = `Chrome's verion ${window.versions.chrome()} - Node's version ${window.versions.node()} - Electron's version ${window.versions.electron()}`;
+    setMessage(value);
   }, []);
 
   return (
@@ -18,28 +17,21 @@ export default function HomePage() {
         <title>Home</title>
       </Head>
       <div>
-        <p>
-          <Link href="/next">
+        <p className="px-4 py-2">
+          <Link href="/cube3x3">
             <a>Go to next page</a>
           </Link>
         </p>
         <Image
-          src="/images/logo.png"
+          src="/images/rubik.gif"
           alt="Logo image"
           width="256px"
           height="256px"
         />
       </div>
       <div>
-        <button onClick={clickHandler}>Get versions</button>
-        <p>{message}</p>
+        <p className="text-3xl font-bold underline">{message}</p>
       </div>
     </React.Fragment>
   );
-
-  function clickHandler() {
-    setMessage(
-      `Chrome's verion ${window.versions.chrome()} - Node's version ${window.versions.node()} - Electron's version ${window.versions.electron()}`
-    );
-  }
 }
