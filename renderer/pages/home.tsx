@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import TitleBar from "../components/home/title-bar";
 import "tailwindcss/tailwind.css";
 export default function HomePage() {
   const [message, setMessage] = React.useState("No message found");
@@ -17,6 +18,7 @@ export default function HomePage() {
         <title>Home</title>
       </Head>
       <div>
+        <TitleBar />
         <p className="px-4 py-2">
           <Link href="/cube3x3">
             <a>Go to next page</a>
