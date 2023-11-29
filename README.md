@@ -38,4 +38,6 @@ $ yarn build (or `npm run build` or `pnpm run build`)
 ```
 
 # Asset
+
 Rubik main screen https://tenor.com/view/agenturleben-agencylife-hannover-kochstrasse-kstr-gif-20343289
+Gumball font
