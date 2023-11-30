@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import TitleBar from "../components/home/title-bar";
-import "tailwindcss/tailwind.css";
+
 export default function HomePage() {
   const [message, setMessage] = React.useState("No message found");
 
