@@ -15,3 +15,8 @@
   color: transparent;
   display: inline;
 }
+
+.titleBarContainer {
+  text-align: center;
+  background-color: black;
+}
