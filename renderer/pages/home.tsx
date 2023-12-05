@@ -3,14 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import TitleBar from "@components/home/TitleBar";
+
 export default function HomePage() {
-  const [message, setMessage] = React.useState("No message found");
-
-  React.useEffect(() => {
-    const value = `Chrome's verion ${window.versions.chrome()} - Node's version ${window.versions.node()} - Electron's version ${window.versions.electron()}`;
-    setMessage(value);
-  }, []);
-
   return (
     <React.Fragment>
       <Head>
@@ -29,9 +23,6 @@ export default function HomePage() {
           width="256px"
           height="256px"
         />
-      </div>
-      <div>
-        <p className="text-3xl font-bold underline">{message}</p>
       </div>
     </React.Fragment>
   );
