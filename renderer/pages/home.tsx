@@ -17,6 +17,14 @@ export default function HomePage() {
             <a>Go to next page</a>
           </Link>
         </p>
+        <div style="align='center'">
+          <Image
+            src="/images/rubik.gif"
+            alt="Logo image"
+            width="256px"
+            height="256px"
+          />
+        </div>
         <Image
           src="/images/rubik.gif"
           alt="Logo image"
